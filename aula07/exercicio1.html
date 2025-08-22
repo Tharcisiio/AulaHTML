@@ -6,13 +6,22 @@
     <title>Document</title>
 
     <style>
-        h1
+
+        .titulo
         {
-            background-color: hotpink;
-            color: white;
-            padding: 40px;
-            margin: 40px;
+            color: rgb(256, 256, 256);
             text-align: center;
+            background-color: hotpink;
+            font-size: 40px;
+            padding: 50px;
+            margin: 40px;
+        }
+
+        .h1
+        {
+            color: white;
+            font-size: 16px;
+            
         }
 
         h2
@@ -40,11 +49,45 @@
             margin: 10px;
         }
 
+        table,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        .destaque
+        {
+            background-color: green;
+            color: white;
+        }
+
+        .MARGEM
+        {
+            margin: 40px;
+        }
+
+        .escola
+        {
+            text-align: center;
+            margin: 40px;
+            color: gray;
+        }
+        
         
     </style>
 </head>
 <body>
-    <h1 class="h1">Página de exercicios de CSS</h1>
+   
+    <p class="titulo">
+        Página de Exercícios de CSS
+        <br> <a href="#" class="h1">Inicio</a>
+         <a href="#" class="h1">Sobre</a>
+         <a href="#" class="h1">Contato</a>
+
+
+
+
+    </p>
 
     <h2>1. Parágrafos e Cores</h2>
 
@@ -60,17 +103,54 @@
         2. Botões e interações
     </h2>
 
-    <p><span class="cor">Clique aqui</span></p>
+    <p class="MARGEM"><span class="cor">Clique aqui</span></p>
 
-    <h2>Lista de Itens</h2>
+    <h2>3.Lista de Itens</h2>
 
-    <ul class="border">
+    <ul class="border MARGEM">
         <li>HTML</li>
         <li>CSS</li>
         <li>Javacript</li>
     </ul>
 
-    <h2>Tabela de Estilo</h2>
+    <h2>4-Tabela de Estilo</h2>
+
+    <table class="MARGEM">
+
+    <tr class="destaque">
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+    </tr>
+
+    <tr>
+        <td>João</td>
+        <td>25</td>
+        <td>São Paulo</td>
+    </tr>
+
+    <tr>
+        <td>Ana</td>
+        <td>30</td>
+        <td>Rio de Janeiro</td>
+    </tr>
+
+
+
+
+
+
+
+
+
+    </table>
+
+
+
+    <p class="escola">
+    ETEC Francisco Garcia
+    </p>
+
 
 
 
