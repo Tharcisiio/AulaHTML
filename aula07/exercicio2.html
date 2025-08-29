@@ -40,10 +40,57 @@
 
         }
 
+        .sublinhado
+        {
+            text-decoration: underline;
+        }
 
+        .italico
+        {
+            font-style: italic;
+        }
+
+        .negrito
+        {
+            font-weight: bold;
+        }
         
+        .fundo
+        {
+        
+            background-color: darkred;
+            color: white;
+        }
 
+        .dois
+        {
+            background-color: rgb(205, 240, 205);
+        }
 
+        .tres
+        {
+            background-color: rgb(234, 210, 210);
+        }
+
+        .marelo
+        {
+            background-color: yellow;
+        }
+
+        .classe
+        {
+            width: 80%;
+        }
+
+        .pequeno
+        {
+            font-size: 13px;
+        }
+
+        .class
+        {
+            border: 3px dotted red;
+        }
 
 
     </style>
@@ -59,26 +106,62 @@
         <h4>Estoque de Produtos</h4>
 
 
-        <table>
+        <table class="classe">
         
-        <tr>
+        <tr class="destaque fundo">
         <th>Produto</th>
         <th>Categoria</th>
         <th>Preço</th>
         <th>Disponibilidade</th>   
         </tr>
 
-        <tr>
-            <td>Mouse</td>
+        <tr class="tres">
+            <td class="negrito">Mouse</td>
             <td>Periféricos</td>
             <td>80,00</td>
-            <td>Headset</td>
+            <td>Em estoque</td>
         </tr>
 
+        <tr class="dois">
+            <td>Teclado</td>
+            <td>Periféricos</td>
+            <td class="marelo class"><b>R$ 120,00</td></b>
+            <td>Fora de Estoque</td>
+        </tr>
+
+        <tr class="tres">
+            <td class="italico">Monitor</td>
+            <td>Display</td>
+            <td>R$ 850,00</td>
+            <TD class="sublinhado">Em reposição</TD>
+        </tr>  
+        
+        <tr class="dois">
+            <td>Headset</td>
+            <td>Audio</td>
+            <td>R$ 210,00</td>
+            <td>Em estoque</td>
+        </tr>
+
+    </table>
+        <p>
+            Tarefas:
+        </p>
+
+   
+
+    
+        <p>
+            <ul>
+                <li>Adicione duas novas linhas de produtos e aplique <span class="pequeno">.negrito .italico .sublinhado</span> conforme desejar.</li>
+                <li>Aplique a classe .destaque em uma célula diferente e observe o efeito.</li>
+            </ul>
+        </p>
+        
 
 
 
-        </table>
+        
 
 
 
